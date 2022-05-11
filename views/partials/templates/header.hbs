@@ -1,0 +1,22 @@
+<div id="header">
+    <div class="fixed-block">
+        <div class="wrapper">
+            <a href="/" class="logo">ShpGram</a>
+
+            <div class="btns">
+                <div id="add" class="add">
+                    {{>buttons/add}}
+                </div>
+
+                <div id="profile_button" class="profile profile_click">
+                    <img class="profile_click" src="{{ user.avatar }}">
+
+                    <ul id="buttons_menu" class="menu hide">
+                        <a href="/profile"><li>{{>buttons/profile}}  Профиль</li></a>
+                        <a href="/auth/logout"><li>Выйти</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

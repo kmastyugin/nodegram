@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="col-2 mr20">
+        {{!-- Блок с постом --}}
+        {{!-- {{>post/block}}
+        {{>post/block}} --}}
+        {{#each posts}}
+            {{>post/block}}
+
+            {{else}}
+            <p class="empty_text">Публикаций не обнаружено</p>
+        {{/each}}
+    </div>
+
+    <div class="col-1 fixed-block">
+        {{!-- Блок с мини-профилем в правой колонке --}}
+        {{>mini_profile/block}}
+
+        {{!-- Блок с рекомендованными профилями --}}
+        {{>recommendations/block}}
+    </div>
+</div>

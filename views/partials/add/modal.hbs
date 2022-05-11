@@ -1,0 +1,32 @@
+<div id="modal_add" class="modal hide">
+    {{!-- <div id="modal_add" class="modal"> --}}
+        <div class="wrapper">
+            <div class="header">
+                <h3>Создание публикации</h3>
+            </div>
+
+            <div class="content">
+                {{!-- 1 этап --}}
+                <div class="add_photo" id="add_photo_block">
+                    {{>buttons/media}}
+                    <h4>Выберите фото</h4>
+                    <form ref='uploadForm' encType="multipart/form-data" method="post" id="file_upload" action="/upload">
+                        <p><input id="add_photo" type="file" name="image" multiple accept="image/*,image/jpeg">
+                            <input type="hidden" value="" name="comment" id="comment_data">
+                            <input id="add_submit1" type="submit" value="Отправить">
+                        </p>
+                    </form>
+                </div>
+
+                {{!-- 2 этап --}}
+                <div id="add_description" class="add_description hide">
+                    <img src="" id="add_image">
+
+                    <form action="/upload" method="post">
+                        <textarea id="add_comment" placeholder="Описание публикации..."></textarea>
+                        <input id="add_submit2" type="submit" value="Опубликовать">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

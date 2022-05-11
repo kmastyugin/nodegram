@@ -1,0 +1,29 @@
+{{!-- <div id="modal_post" class="modal hide"> --}}
+<div id="modal_post" class="modal hide">
+    <div class="wrapper">
+        <div class="content">
+            <img id="full_photo" src="/images/image2.jpg">
+        </div>
+
+        <div class="info">
+            {{!-- Шапка полного поста --}}
+            {{>full_post/header}}
+
+            {{!-- Блок со всеми комментариями --}}
+            {{>full_post/comments}}
+
+
+            <div class="info_bottom">
+                {{!-- Кнопки полного поста и статистика --}}
+                {{>full_post/navigation}}
+
+                {{!-- Оставить комментарий --}}
+                <div class="my_comment">
+                    <textarea id="add_comment_full" autocomplete="off" autocorrect="off" type="text"
+                        placeholder="Добавьте комментарий..."></textarea>
+                    <div id="submit_new_comment_full" class="btn">Опубликовать</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

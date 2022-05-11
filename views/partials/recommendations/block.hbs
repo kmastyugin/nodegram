@@ -1,0 +1,13 @@
+<div class="recommendations mt25">
+    <h3>Рекомендации для вас</h3>
+
+    <div class="list">
+        {{!-- Блок с рекомендованным профилем --}}
+        {{#each recUsers}}
+            {{>recommendations/rec_user}}
+        {{/each}}
+{{!--         
+        {{>recommendations/rec_user}}
+        {{>recommendations/rec_user}} --}}
+    </div>
+</div>

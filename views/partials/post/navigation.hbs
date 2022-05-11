@@ -1,0 +1,14 @@
+<div class="navigation" data-id="{{ id }}">
+    <div class="group" data-id="{{ id }}">
+        {{!-- SVG кнопки --}}
+        <div class="like" data-id="{{ id }}">{{>buttons/like_button}}</div>
+        {{!-- <div class="comment">{{>buttons/comment_button}}</div> --}}
+    </div>
+
+    <div class="likes" data-id="{{ id }}">
+        <span>0</span> отметок "Нравится"
+    </div>
+
+    {{!-- Блок со всеми комментариями --}}
+    {{>post/comments}}
+</div>

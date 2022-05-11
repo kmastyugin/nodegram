@@ -1,0 +1,25 @@
+<div class="post default-block">
+    {{!-- Шапка поста --}}
+    {{>post/header}}
+
+    <div class="content">
+        <img src="{{image}}">
+    </div>
+
+    {{!-- Кнопки и статистика поста --}}
+    {{>post/navigation}}
+
+    {{!-- <DIV>
+        data-comment="{{ comment }}" 
+        data-nickname="{{ nickname }}"
+        data-avatar="{{ avatar }}"
+        data-id="{{ user_id }}"
+    </DIV> --}}
+
+    {{!-- Оставить комментарий --}}
+    
+    <div class="my_comment">
+        <textarea class="post_fetch" data-id="{{ id }}" autocomplete="off" autocorrect="off" type="text" placeholder="Добавьте комментарий..."></textarea>
+        <div class="btn">Опубликовать</div>
+    </div>
+</div>

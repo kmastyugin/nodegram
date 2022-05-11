@@ -1,0 +1,22 @@
+<div class="auth__block">
+    <div class="auth">
+        <h1>ShpGram</h1>
+
+        <form action="/register" method="post">
+            <input name="username" class="default" type="text" placeholder="Имя и фамилия">
+            <input name="nickname" class="default" type="text" placeholder="Имя пользователя">
+            <input name="password" class="default" type="password" placeholder="Пароль">
+            <input name="password_second" class="default" type="password" placeholder="Пароль еще раз">
+
+            {{#if error}}
+                <p class="error_text">{{message}}</p>
+            {{/if}}
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+
+    <div class="auth mini">
+        Есть аккаунт? <a href="/auth">Войти</a>
+    </div>
+</div>

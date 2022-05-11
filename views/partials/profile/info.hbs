@@ -1,0 +1,22 @@
+<div class="header">
+    <div class="col-1">
+        <img src="{{ candidate.avatar }}">
+    </div>
+    <div class="col-2">
+        <div class="nickname">
+            <span>{{ candidate.nickname }}</span>
+            
+            {{#if candidate.you }}
+            <div id="change_profile" class="btn">Редактировать профиль</div>
+            {{/if}}
+        </div>
+
+        <div class="info">
+            <span>{{ postCount }}</span> публикаций
+        </div>
+
+        <div class="name">
+            {{ candidate.name }}
+        </div>
+    </div>
+</div>
