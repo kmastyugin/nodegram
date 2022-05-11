@@ -15,4 +15,7 @@ module.exports = sequelize.define('Token', {
     type: Sequelize.STRING(36),
     allowNull: false
   },
+}, {
+  charset: 'utf8',
+  collate: 'utf8_unicode_ci'
 })

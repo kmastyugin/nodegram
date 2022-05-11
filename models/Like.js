@@ -15,4 +15,7 @@ module.exports = sequelize.define('Like', {
     type: Sequelize.INTEGER,
     allowNull: false
   }
+}, {
+  charset: 'utf8',
+  collate: 'utf8_unicode_ci'
 })
